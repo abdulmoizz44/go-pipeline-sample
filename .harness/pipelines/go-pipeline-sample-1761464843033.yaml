@@ -25,6 +25,11 @@ pipeline:
                       go get gotest.tools/gotestsum
                       gotestsum --format=standard-verbose --junitfile unit-tests.xml
                       exit 0
+                    reports:
+                      type: JUnit
+                      spec:
+                        paths:
+                          - "*.xml"
               - step:
                   type: Run
                   name: Build App
