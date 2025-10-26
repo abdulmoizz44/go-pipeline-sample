@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_abdulmoizz44_go_pipeline_sample_1761464861800-pr-trigger-input-set
+  identifier: Build_abdulmoizz44_go_pipeline_sample_1761464861800prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: abdulmoiz
+  pipeline:
+    identifier: Build_abdulmoizz44_go_pipeline_sample_1761464861800
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
